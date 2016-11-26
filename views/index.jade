@@ -4,34 +4,34 @@ block content
     form#Form2(runat='server')
       nav.white(role='navigation')
         .nav-wrapper.container
-          a(href='Default.aspx')
+          a(href='index.jade')
             img(src='/imagenes/iti.GIF', style='width: 60px; height: 60px')
-          a(href='Default.aspx')
+          a(href='index.jade')
             img(src='/imagenes/juan.jpg', style='width: 60px; height: 60px')
-          a(href='Default.aspx')
+          a(href='index.jade')
             img(src='/imagenes/miga.JPG', style='width: 60px; height: 60px')
-          a(href='Default.aspx')
+          a(href='index.jade')
             img(src='/imagenes/normals.gif', style='width: 60px; height: 60px')
-          a(href='Default.aspx')
+          a(href='index.jade')
             img(src='/imagenes/salle.png', style='width: 60px; height: 60px')
-          a(href='Default.aspx')
+          a(href='index.jade')
             img(src='/imagenes/jorge.jpg', style='width: 60px; height: 60px')
-          a(href='Default.aspx')
+          a(href='index.jade')
             img(src='/imagenes/francisco.png', style='width: 60px; height: 60px')
-          a(href='Default.aspx')
+          a(href='index.jade')
             img(src='/imagenes/ricaurte.jpg', style='width: 60px; height: 60px')
-          a(href='Default.aspx')
+          a(href='index.jade')
             img(src='/imagenes/ciu.jpg', style='width: 60px; height: 60px')
-          a(href='Default.aspx')
+          a(href='index.jade')
             img(src='/imagenes/pin.JPG', style='width: 60px; height: 60px')
-          a(href='Default.aspx')
+          a(href='index.jade')
             img(src='/imagenes/andes.JPG', style='width: 60px; height: 60px')
-          a(href='Default.aspx')
+          a(href='index.jade')
             img(src='/imagenes/corazon.JPG', style='width: 60px; height: 60px')
           a#logo-container.brand-logo(href='#', style='font-family: Verdana')
           ul.right.hide-on-med-and-down
             li
-              a SEBASTIÁN
+              a(href='/mapa') VER MAPA 
           ul#nav-mobile.side-nav
             li
               a(href='#') Navbar Link
@@ -60,7 +60,7 @@ block content
             style.
               .embed-container {
               position: relative;
-              padding-bottom: 80%;
+              padding-bottom: 50%;
               height: 0;
               max-width: 100%;
               }
@@ -80,7 +80,7 @@ block content
               margin-bottom: -15px;
               }
             .embed-container
-              iframe(width='500', height='400', frameborder='0', scrolling='no', marginheight='0', marginwidth='0', title='Colegios', src='//www.arcgis.com/apps/Embed/index.html?webmap=a444dcc7be26411882f436b107b16ef6&extent=-75.6326,1.5897,-75.5429,1.637&zoom=true&scale=true&disable_scroll=true&theme=light')
+              iframe(width='500', height='400', frameborder='0', scrolling='no', marginheight='0', marginwidth='0', title='Colegios', src='/mapa')
             .section
               // Icon Section
               .row

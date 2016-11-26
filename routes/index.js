@@ -24,6 +24,11 @@ router.get('/', function (req, res, next) {
     title: 'Postgis & NodeJS'}
   );
 });
+router.get('/mapa', function (req, res, next) {
+  res.render('mapa', {
+    title: 'Postgis & NodeJS'}
+  );
+});
 
 /* GET Postgres JSON data */
 router.get('/data', function (req, res) {
