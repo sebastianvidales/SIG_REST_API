@@ -1,8 +1,177 @@
 extends layout
 
 block content
-  h1= title
-  p Bienvenido a #{title}
-  a(href='https://sigpg.herokuapp.com/data') Ver datos geograficos (JSON)
-  br
-  a(href='https://sigpg.herokuapp.com/tabla') Ver tabla de datos
+    form#Form2(runat='server')
+      nav.white(role='navigation')
+        .nav-wrapper.container
+          a(href='Default.aspx')
+            img(src='/imagenes/iti.GIF', style='width: 60px; height: 60px')
+          a(href='Default.aspx')
+            img(src='/imagenes/juan.jpg', style='width: 60px; height: 60px')
+          a(href='Default.aspx')
+            img(src='/imagenes/miga.JPG', style='width: 60px; height: 60px')
+          a(href='Default.aspx')
+            img(src='/imagenes/normals.gif', style='width: 60px; height: 60px')
+          a(href='Default.aspx')
+            img(src='/imagenes/salle.png', style='width: 60px; height: 60px')
+          a(href='Default.aspx')
+            img(src='/imagenes/jorge.jpg', style='width: 60px; height: 60px')
+          a(href='Default.aspx')
+            img(src='/imagenes/francisco.png', style='width: 60px; height: 60px')
+          a(href='Default.aspx')
+            img(src='/imagenes/ricaurte.jpg', style='width: 60px; height: 60px')
+          a(href='Default.aspx')
+            img(src='/imagenes/ciu.jpg', style='width: 60px; height: 60px')
+          a(href='Default.aspx')
+            img(src='/imagenes/pin.JPG', style='width: 60px; height: 60px')
+          a(href='Default.aspx')
+            img(src='/imagenes/andes.JPG', style='width: 60px; height: 60px')
+          a(href='Default.aspx')
+            img(src='/imagenes/corazon.JPG', style='width: 60px; height: 60px')
+          a#logo-container.brand-logo(href='#', style='font-family: Verdana')
+          ul.right.hide-on-med-and-down
+            li
+              a SEBASTIÁN
+          ul#nav-mobile.side-nav
+            li
+              a(href='#') Navbar Link
+          a.button-collapse(href='#', data-activates='nav-mobile')
+            i.material-icons menu
+      #body
+        #index-banner.parallax-container
+          .section.no-pad-bot
+            .container
+              br
+              br
+              h1.header.center(style='text-shadow: -4px -4px 1px #000') SISTEMA DE INFORMACIÓN GEOGRÁFICA
+              .row.center
+                h5.header.col.s12.light(style='text-shadow: -2px -2px 1px #000')
+                  | Aplicativo Web para el suministro de información de las ubicaciones de instituciones pedagógicas
+              .row.center
+                // <a href="http://200.21.7.94/rqsoft/Log.aspx" id="download-button" class="btn-large waves-effect waves-light teal lighten-1" target="_blank">Matricular Proyectos</a>
+              br
+              br
+          .parallax
+            img(src='/imagenes/normal.jpg', alt='Unsplashed normal img 1')
+        section.content-wrapper.main-content.clear-fix
+          .container
+            br
+            br
+            style.
+              .embed-container {
+              position: relative;
+              padding-bottom: 80%;
+              height: 0;
+              max-width: 100%;
+              }
+              .embed-container iframe,
+              .embed-container object,
+              .embed-container iframe {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              }
+              small {
+              position: absolute;
+              z-index: 0;
+              bottom: 0;
+              margin-bottom: -15px;
+              }
+            .embed-container
+              iframe(width='500', height='400', frameborder='0', scrolling='no', marginheight='0', marginwidth='0', title='Colegios', src='//www.arcgis.com/apps/Embed/index.html?webmap=a444dcc7be26411882f436b107b16ef6&extent=-75.6326,1.5897,-75.5429,1.637&zoom=true&scale=true&disable_scroll=true&theme=light')
+            .section
+              // Icon Section
+              .row
+                .col.s12.m4
+                  .icon-block
+                    h2.center.brown-text
+                      i.material-icons vpn_key
+                    h5.center Objetivo
+                    p.light
+                      | El proyecto tiene como objetivo un sistema de georreferenciación que brinda información
+                      | acerca de la ubicacion de los colegios principales en el municipio de Florencia Caquetá.
+                .col.s12.m4
+                  .icon-block
+                    h2.center.brown-text
+                      i.material-icons lock_outline
+                    h5.center Misión
+                    p.light
+                      | La misión es que los usuarios tengan datos a primera mano sobre los colegios y puedan
+                      | tener así información precisa del punto (COLEGIO) donde deseen llegar.
+                .col.s12.m4
+                  .icon-block
+                    h2.center.brown-text
+                      i.material-icons lock_open
+                    h5.center Visión
+                    p.light
+                      | Poder implementar un canal de comunicacion, que indique la ubicación de los colegios
+                      | principales a través de una App móvil
+          .parallax-container.valign-wrapper
+            .section.no-pad-bot
+              .container
+                .row.center
+                  h5.header.col.s12.light
+            .parallax
+              img(src='/imagenes/normal1.jpg', alt='Unsplashed normal1 img 2')
+          .container
+            .section
+              #registrar.row
+                .col.s12.center
+                  h3
+                    i.mdi-content-send.brown-text
+                  .carousel.carousel-slider
+                    a.carousel-item(href='#one!')
+                      img(src='/imagenes/eliecer.jpg')
+                    a.carousel-item(href='#two!')
+                      img(src='/imagenes/juanx.jpg')
+                    a.carousel-item(href='#three!')
+                      img(src='/imagenes/23.jpeg')
+                  h4 Perfil profesional
+                  p.left-align.light
+                    | La carrera profesional de Ingeniería de Sistemas, es multidisciplinaria, permitiendo a los
+                    | egresados el acceso a diversos sectores ocupacionales, ya que este, combina en forma
+                    | efectiva la aplicación de sus conocimientos en varias disciplinas, utilizando además
+                    | los nuevos enfoques de análisis tales como: modelos, sistemas, investigación operacional,
+                    | computacional, informática, entre otros, a la solución de problemas que envuelven relaciones
+                    | complejas, entre diversos componentes.
+          .parallax-container.valign-wrapper
+            .section.no-pad-bot
+              .container
+                .row.center
+                  h5.header.col.s12.light
+            .parallax
+              img(src='/imagenes/campes.jpg', alt='Unsplashed campes img 3')
+          script.
+            $(document).ready(function () {
+            $('.carousel.carousel-slider').carousel({ full_width: true });
+            $('.carousel').carousel();
+            });
+            $('.carousel').carousel('next');
+            $('.carousel').carousel('next', 3); // Move next n times.
+            // Previous slide
+            $('.carousel').carousel('prev');
+            $('.carousel').carousel('prev', 4); // Move prev n times.
+            // Set to nth slide
+            $('.carousel').carousel('set', 4);
+      footer.page-footer.teal
+        .container
+          .row
+            .col.l6.s12
+              h5.white-text Universidad de la Amazonia
+              p.grey-text.text-lighten-4 Facultad de Ingeniería de Sistemas.
+            .col.l3.s12
+            .col.l3.s12
+              h5.white-text Síguenos
+              .avatar
+                a(href='http://www.udla.edu.co/v10/', target='_blank')
+                  img.avatar(src='/imagenes/ua.png', style='width: 60px; height: 60px; border-radius:50%')
+        .footer-copyright
+          .container
+            | Hecho por 
+            a.brown-text.text-lighten-3(href='http://materializecss.com') Sebastián Vidales Claros
+    // Compiled and minified JavaScript
+    script(src='/javascripts/jquery-1.7.1.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js')
+    script(src='/javascripts/init.js')
