@@ -4,12 +4,10 @@ var router = express.Router();
 var pg = require('pg');
 
 pg.defaults.ssl = process.env.DATABASE_URL != undefined;
-var conString = process.env.DATABASE_URL || "postgres://postgres:root@localhost/proyecto_sig"; // Cadena de conexión a la base de datos
+var conString = process.env.DATABASE_URL || "postgres://postgres:sebastianvidalesc@localhost/postgres"; // Cadena de conexión a la base de datos
 
 // Set up your database query to display GeoJSON
-var coffee_query = "SELECT row_to_json(fc) FROM ( SELECT array_to_json(array_agg(f)) As Datos FROM (" +
-    "SELECT ST_AsGeoJSON(lg.geom)::json As geometry, row_to_json((id, name)) As prope" +
-    "rties FROM cambridge_coffee_shops As lg) As f) As fc";
+var coffee_query = "SELECT * FROM puntoscolegios ORDER BY gid ASC ";
 
 /*
 SELECT row_to_json(fc) FROM (
@@ -36,7 +34,7 @@ router.get('/data', function (req, res) {
     result.addRow(row);
   });
   query.on("end", function (result) {
-    res.json(result.rows[0].row_to_json);
+    res.json(result.rows);
     res.end();
   });
 });
